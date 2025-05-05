@@ -3,4 +3,13 @@ wwwroot\css\login.css
 wwwroot\css\main.css
 wwwroot\css\sidebar.css
 wwwroot\css\style.css
-wwwroot\data\users.json
+wwwroot\uploads\0a34a06f-b1e8-4878-8f57-cf9cf2f36c0b.jfif
+wwwroot\uploads\1e8277b5-963c-4a58-a668-8a1466be0914.jfif
+wwwroot\uploads\24330051-803a-4ef7-8349-f5900a428cd3.jpg
+wwwroot\uploads\902d5462-6f73-475d-a877-896c420c58f7.jpg
+wwwroot\uploads\ae217479-1b62-456b-a3c0-da04c680895e.jfif
+wwwroot\uploads\b85e9b3c-d109-41b4-a630-4ea61541afdc.jpg
+wwwroot\uploads\c9126740-cee5-4807-8246-ed2f6bc10405.jpg
+wwwroot\uploads\d5143972-cb0e-4d1b-8523-d9b9b849ba27.jpg
+wwwroot\uploads\df8958c6-9d81-4ae4-a4bd-02c5f4f2a91d.jpg
+wwwroot\uploads\e36d4b9d-0787-4b20-95fe-4e549249a3b3.jpg

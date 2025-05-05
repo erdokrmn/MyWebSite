@@ -1,59 +1,73 @@
-﻿@model List<MyWebSite.Models.SiteContent>
-
-@{
-    ViewData["Title"] = "İçerik Listesi";
+﻿@{
+    ViewData["Title"] = "İçerik Yönetimi";
     Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+    var iconOptions = new Dictionary<string, string>
+    {
+        { "fab fa-twitter", "Twitter" },
+        { "fab fa-instagram", "Instagram" },
+        { "fab fa-github", "GitHub" },
+        { "fab fa-linkedin", "LinkedIn" },
+        { "fab fa-facebook", "Facebook" },
+        { "fab fa-youtube", "YouTube" },
+        { "fab fa-tiktok", "TikTok" },
+        { "fab fa-discord", "Discord" }
+    };
 }
 
-<h2 class="mb-4">İçerikler</h2>
+<h2>İçerik Yönetimi</h2>
 
-<a asp-action="Create" class="btn btn-success mb-3">+ Yeni İçerik Ekle</a>
+<section>
+    <h3>Ana Sayfa Arka Plan</h3>
+    <form asp-action="UpdateContent" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="Key" value="AnaSayfa_ArkaPlan" />
+        <input type="hidden" name="Type" value="Image" />
+        <input type="file" name="ImageFile" class="form-control" />
+        <button type="submit" class="btn btn-primary mt-2">Kaydet</button>
+    </form>
+</section>
 
-@if (!Model.Any())
-{
-    <div class="alert alert-info">
-        Henüz herhangi bir içerik eklenmemiş. Yukarıdaki butonu kullanarak yeni içerik ekleyebilirsiniz.
-    </div>
-}
-else
-{
-    <table class="table table-bordered table-striped">
-        <thead class="table-light">
-            <tr>
-                <th>#</th>
-                <th>Sayfa</th>
-                <th>Bölüm (Section)</th>
-                <th>Başlık</th>
-                <th>İçerik</th>
-                <th>Görsel</th>
-                <th class="text-center">İşlemler</th>
-            </tr>
-        </thead>
-        <tbody>
-            @for (int i = 0; i < Model.Count; i++)
+<hr />
+
+<section>
+    <h3>Hakkımda Arka Plan</h3>
+    <form asp-action="UpdateContent" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="Key" value="Hakkimda_ArkaPlan" />
+        <input type="hidden" name="Type" value="Image" />
+        <input type="file" name="ImageFile" class="form-control" />
+        <button type="submit" class="btn btn-primary mt-2">Kaydet</button>
+    </form>
+</section>
+
+<hr />
+
+<section>
+    <h3>Hakkımda Yazısı</h3>
+    <form asp-action="UpdateContent" method="post">
+        <input type="hidden" name="Key" value="Hakkimda_Metin" />
+        <input type="hidden" name="Type" value="Text" />
+        <textarea name="Value" class="form-control" rows="5" placeholder="Hakkımda yazısı..."></textarea>
+        <button type="submit" class="btn btn-primary mt-2">Kaydet</button>
+    </form>
+</section>
+
+<hr />
+
+<section>
+    <h3>Sosyal Medya Linki Ekle</h3>
+    <form asp-action="UpdateContent" method="post">
+        <input type="hidden" name="Type" value="Link" />
+
+        <label for="Key">Platform</label>
+        <select name="Key" class="form-control">
+            @foreach (var icon in iconOptions)
             {
-                <tr>
-                    <td>@(i + 1)</td>
-                    <td>@Model[i].Page</td>
-                    <td>@Model[i].Section</td>
-                    <td>@Model[i].Title</td>
-                    <td>@Model[i].Content?.Substring(0, Math.Min(50, Model[i].Content.Length))...</td>
-                    <td>
-                        @if (!string.IsNullOrEmpty(Model[i].ImagePath))
-                        {
-                            <img src="@Model[i].ImagePath" alt="img" width="60" />
-                        }
-                        else
-                        {
-                            <span class="text-muted">-</span>
-                        }
-                    </td>
-                    <td class="text-center">
-                        <a asp-action="Edit" asp-route-id="@Model[i].Id" class="btn btn-sm btn-primary">Düzenle</a>
-                        <a asp-action="Delete" asp-route-id="@Model[i].Id" class="btn btn-sm btn-danger" onclick="return confirm('Bu içeriği silmek istediğinize emin misiniz?');">Sil</a>
-                    </td>
-                </tr>
+                <option value="@icon.Key">@icon.Value</option>
             }
-        </tbody>
-    </table>
-}
+        </select>
+
+        <label for="Value" class="mt-2">URL</label>
+        <input type="text" name="Value" class="form-control mt-1" placeholder="https://..." />
+
+        <button type="submit" class="btn btn-primary mt-2">Ekle</button>
+    </form>
+</section>

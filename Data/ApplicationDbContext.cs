@@ -12,5 +12,7 @@ namespace MyWebSite.Data
         }
 
         public DbSet<SiteContent> SiteContents { get; set; }
+
+        public DbSet<SocialLink> SocialLinks { get; set; }
     }
 }

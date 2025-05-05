@@ -168,3 +168,4 @@ C:\Users\erdo\source\repos\MyWebSite\MyWebSite\bin\Debug\net8.0\runtimes\browser
 C:\Users\erdo\source\repos\MyWebSite\MyWebSite\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\erdo\source\repos\MyWebSite\MyWebSite\obj\Debug\net8.0\MyWebSite.csproj.AssemblyReference.cache
 C:\Users\erdo\source\repos\MyWebSite\MyWebSite\obj\Debug\net8.0\MyWebSite.csproj.Up2Date
+C:\Users\erdo\source\repos\MyWebSite\MyWebSite\obj\Debug\net8.0\MyWebSite.sourcelink.json

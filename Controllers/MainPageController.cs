@@ -15,15 +15,17 @@ namespace MyWebSite.Controllers
 
         public IActionResult MainPage()
         {
-            var model = new MainPageViewModel
-            {
-                Home = _context.SiteContents.Where(x => x.Page == "Home").ToList(),
-                About = _context.SiteContents.Where(x => x.Page == "About").ToList(),
-                Resume = _context.SiteContents.Where(x => x.Page == "Resume").ToList(),
-                Portfolio = _context.SiteContents.Where(x => x.Page == "Portfolio").ToList()
-            };
+            var contents = _context.SiteContents.ToList();
 
-            return View(model);
+            ViewBag.AnaSayfaBg = contents.FirstOrDefault(x => x.Key == "AnaSayfa_ArkaPlan")?.Value;
+            ViewBag.HakkimdaBg = contents.FirstOrDefault(x => x.Key == "Hakkimda_ArkaPlan")?.Value;
+            ViewBag.HakkimdaYazi = contents.FirstOrDefault(x => x.Key == "Hakkimda_Metin")?.Value;
+
+            ViewBag.SocialLinks = contents
+                .Where(x => x.Type == "Link" && x.Key.StartsWith("fab")) // örn: fab fa-twitter
+                .ToList();
+
+            return View();
         }
     }
 }

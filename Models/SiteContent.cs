@@ -4,16 +4,18 @@ namespace MyWebSite.Models
 {
     public class SiteContent
     {
-        public Guid Id { get; set; }
+        [Key]
+        public int Id { get; set; }
 
         [Required]
-        public string Page { get; set; }  // Örn: About, Resume
+        [MaxLength(100)]
+        public string Key { get; set; } // Örnek: "AnaSayfa_ArkaPlan", "Hakkimda_Metin"
 
         [Required]
-        public string Section { get; set; } // Örn: SoftwareSkills, Experience
+        public string Value { get; set; } // Metin, görsel URL, ya da link değeri
 
-        public string Title { get; set; }   // Örn: "About", "Experience", "Photoshop"
-        public string Content { get; set; } // Açıklama metni
-        public string ImagePath { get; set; } // Görsel yolu (varsa)
+        [Required]
+        [MaxLength(20)]
+        public string Type { get; set; } // "Text", "Image", "Link"
     }
 }
