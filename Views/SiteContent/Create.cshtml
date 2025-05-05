@@ -1,0 +1,61 @@
+﻿@model MyWebSite.Models.SiteContent
+
+@{
+    ViewData["Title"] = "İçerik Ekle";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<h2 class="mb-4">Yeni İçerik Ekle</h2>
+
+<form asp-action="Create" enctype="multipart/form-data" method="post" class="form">
+
+    <div class="form-group mb-3">
+        <label>Sayfa (Page)</label>
+        <select asp-for="Page" class="form-control">
+            <option value="Home">Home (Anasayfa)</option>
+            <option value="About">About (Hakkımda)</option>
+            <option value="Resume">Resume (Özgeçmiş)</option>
+            <option value="Portfolio">Portfolio</option>
+        </select>
+        <small class="form-text text-muted">Bu içerik hangi sayfada gösterilecek?</small>
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Bölüm (Section)</label>
+        <select asp-for="Section" class="form-control">
+            <option value="Name">Hero: İsim</option>
+            <option value="Surname">Hero: Soyisim</option>
+            <option value="Title">Hero: Meslek</option>
+            <option value="HeroDesc">Hero: Açıklama</option>
+            <option value="Image">About: Profil Fotoğrafı</option>
+            <option value="Bio">About: Biyografi</option>
+            <option value="Address">About: Adres</option>
+            <option value="SoftwareSkill">Resume: Yazılım Becerisi</option>
+            <option value="Language">Resume: Dil</option>
+            <option value="Experience">Resume: İş Deneyimi</option>
+            <option value="Education">Resume: Eğitim</option>
+            <option value="Portfolio">Portfolio Kartı</option>
+        </select>
+        <small class="form-text text-muted">Bu içerik sayfanın hangi bölümünde gösterilecek?</small>
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Başlık (Title)</label>
+        <input asp-for="Title" class="form-control" placeholder="Örneğin: Yazılım Mühendisi" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label>İçerik (Content)</label>
+        <textarea asp-for="Content" class="form-control" rows="4" placeholder="Açıklama metni..."></textarea>
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Görsel (Image - isteğe bağlı)</label>
+        <input type="file" name="imageFile" class="form-control" />
+        <small class="form-text text-muted">Yalnızca `Image` section için gereklidir.</small>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+    <a asp-action="Index" class="btn btn-secondary">İptal</a>
+
+</form>

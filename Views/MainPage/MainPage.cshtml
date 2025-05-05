@@ -1,0 +1,132 @@
+﻿@model MyWebSite.Models.ViewModels.MainPageViewModel
+
+@{
+    ViewData["Title"] = "Anasayfa";
+}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">Erdinç Karaman</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#portfolio">Portfolio</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>
+            @Model.Home.FirstOrDefault(x => x.Section == "Name")?.Content
+            <span>@Model.Home.FirstOrDefault(x => x.Section == "Surname")?.Content</span>
+        </h1>
+        <p>@Model.Home.FirstOrDefault(x => x.Section == "Title")?.Content</p>
+        <div class="buttons">
+            <a href="#" class="btn">Resume</a>
+            <a href="#" class="btn outline">Portfolio</a>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about">
+    <div class="about-content">
+        <img src="@Model.About.FirstOrDefault(x => x.Section == "Image")?.ImagePath ?? " https: //via.placeholder.com/300x400"" alt="Profile" />
+        <div class="text">
+            <h2>About</h2>
+            @foreach (var item in Model.About.Where(x => x.Section != "Image"))
+            {
+                <p>@item.Content</p>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Resume -->
+<section id="resume" class="resume">
+    <div class="resume-grid">
+        <div class="column">
+            <h3>Software Skills</h3>
+            <ul>
+                @foreach (var skill in Model.Resume.Where(x => x.Section == "SoftwareSkill"))
+                {
+                    <li>@skill.Title</li>
+                }
+            </ul>
+
+            <h3>Languages</h3>
+            <ul>
+                @foreach (var lang in Model.Resume.Where(x => x.Section == "Language"))
+                {
+                    <li>@lang.Title</li>
+                }
+            </ul>
+
+            <h3>Personal Skills</h3>
+            <ul>
+                @foreach (var skill in Model.Resume.Where(x => x.Section == "PersonalSkill"))
+                {
+                    <li>@skill.Title</li>
+                }
+            </ul>
+        </div>
+
+        <div class="column">
+            <h3>Experience</h3>
+            <ul>
+                @foreach (var job in Model.Resume.Where(x => x.Section == "Experience"))
+                {
+                    <li>@job.Title</li>
+                }
+            </ul>
+
+            <h3>Education</h3>
+            @foreach (var edu in Model.Resume.Where(x => x.Section == "Education"))
+            {
+                <p>@edu.Content</p>
+            }
+        </div>
+
+        <div class="column">
+            <h3>What Can I Do?</h3>
+            <ul>
+                @foreach (var item in Model.Resume.Where(x => x.Section == "Ability"))
+                {
+                    <li>@item.Title</li>
+                }
+            </ul>
+
+            <h3>Hobbies</h3>
+            <ul>
+                @foreach (var hobby in Model.Resume.Where(x => x.Section == "Hobby"))
+                {
+                    <li>@hobby.Title</li>
+                }
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-items">
+        @foreach (var item in Model.Portfolio)
+        {
+            <div class="portfolio-card">
+                <img src="@item.ImagePath" alt="@item.Title" />
+                <h4>@item.Title</h4>
+                <p>@item.Content</p>
+            </div>
+        }
+    </div>
+</section>

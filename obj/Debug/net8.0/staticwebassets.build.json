@@ -1,0 +1,640 @@
+{
+  "Version": 1,
+  "Hash": "tIki4YGxbMOZMjNtGMq+ld5YNj3TXeqn6sXVur3POwI=",
+  "Source": "MyWebSite",
+  "BasePath": "_content/MyWebSite",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MyWebSite\\wwwroot",
+      "Source": "MyWebSite",
+      "ContentRoot": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\",
+      "BasePath": "_content/MyWebSite",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\dashboard.css",
+      "SourceId": "MyWebSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\",
+      "BasePath": "_content/MyWebSite",
+      "RelativePath": "css/dashboard#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kp0apbr1j0",
+      "Integrity": "6CgrYtqazNvAoQYLVPKj5N9Fx3FlfkkD88ZxVmXh/34=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
+    },
+    {
+      "Identity": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\login.css",
+      "SourceId": "MyWebSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\",
+      "BasePath": "_content/MyWebSite",
+      "RelativePath": "css/login#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "biw1kkex23",
+      "Integrity": "LSFyiGyFRdqph82CFNoOKLu8moFA89VQY0EM9QTOxek=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
+      "Identity": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\main.css",
+      "SourceId": "MyWebSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\",
+      "BasePath": "_content/MyWebSite",
+      "RelativePath": "css/main#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0j14zudhea",
+      "Integrity": "RNRgkg8OLL/up1WBsgJnSbR6uT2hZ0NbpQGB+wds8No=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\main.css"
+    },
+    {
+      "Identity": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\sidebar.css",
+      "SourceId": "MyWebSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\",
+      "BasePath": "_content/MyWebSite",
+      "RelativePath": "css/sidebar#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mrshgjaqls",
+      "Integrity": "HvgQYEo277HvNGnICxb4VcGUgmC9E7/37HBtxpADcBo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\sidebar.css"
+    },
+    {
+      "Identity": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\style.css",
+      "SourceId": "MyWebSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\",
+      "BasePath": "_content/MyWebSite",
+      "RelativePath": "css/style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dy3vnp1zn3",
+      "Integrity": "O4+9/MKvck2BJW5htNwD51ixV82Fulvy2xCoEWKkMDo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\data\\users.json",
+      "SourceId": "MyWebSite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\",
+      "BasePath": "_content/MyWebSite",
+      "RelativePath": "data/users#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "88b8608wpa",
+      "Integrity": "KM8ObXTmGdrVPWw+8lyHI3cjAIZIDQXx2AQSTM0JTQU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\data\\users.json"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/dashboard.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2190"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6CgrYtqazNvAoQYLVPKj5N9Fx3FlfkkD88ZxVmXh/34=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:36:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6CgrYtqazNvAoQYLVPKj5N9Fx3FlfkkD88ZxVmXh/34="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.kp0apbr1j0.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2190"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6CgrYtqazNvAoQYLVPKj5N9Fx3FlfkkD88ZxVmXh/34=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:36:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kp0apbr1j0"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6CgrYtqazNvAoQYLVPKj5N9Fx3FlfkkD88ZxVmXh/34="
+        }
+      ]
+    },
+    {
+      "Route": "css/login.biw1kkex23.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2277"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LSFyiGyFRdqph82CFNoOKLu8moFA89VQY0EM9QTOxek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:36:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "biw1kkex23"
+        },
+        {
+          "Name": "label",
+          "Value": "css/login.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LSFyiGyFRdqph82CFNoOKLu8moFA89VQY0EM9QTOxek="
+        }
+      ]
+    },
+    {
+      "Route": "css/login.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2277"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LSFyiGyFRdqph82CFNoOKLu8moFA89VQY0EM9QTOxek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:36:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LSFyiGyFRdqph82CFNoOKLu8moFA89VQY0EM9QTOxek="
+        }
+      ]
+    },
+    {
+      "Route": "css/main.0j14zudhea.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\main.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RNRgkg8OLL/up1WBsgJnSbR6uT2hZ0NbpQGB+wds8No=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:36:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0j14zudhea"
+        },
+        {
+          "Name": "label",
+          "Value": "css/main.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RNRgkg8OLL/up1WBsgJnSbR6uT2hZ0NbpQGB+wds8No="
+        }
+      ]
+    },
+    {
+      "Route": "css/main.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\main.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RNRgkg8OLL/up1WBsgJnSbR6uT2hZ0NbpQGB+wds8No=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:36:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RNRgkg8OLL/up1WBsgJnSbR6uT2hZ0NbpQGB+wds8No="
+        }
+      ]
+    },
+    {
+      "Route": "css/sidebar.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\sidebar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HvgQYEo277HvNGnICxb4VcGUgmC9E7/37HBtxpADcBo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:36:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HvgQYEo277HvNGnICxb4VcGUgmC9E7/37HBtxpADcBo="
+        }
+      ]
+    },
+    {
+      "Route": "css/sidebar.mrshgjaqls.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\sidebar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HvgQYEo277HvNGnICxb4VcGUgmC9E7/37HBtxpADcBo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:36:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mrshgjaqls"
+        },
+        {
+          "Name": "label",
+          "Value": "css/sidebar.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HvgQYEo277HvNGnICxb4VcGUgmC9E7/37HBtxpADcBo="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2546"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O4+9/MKvck2BJW5htNwD51ixV82Fulvy2xCoEWKkMDo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 07:06:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-O4+9/MKvck2BJW5htNwD51ixV82Fulvy2xCoEWKkMDo="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.dy3vnp1zn3.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2546"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O4+9/MKvck2BJW5htNwD51ixV82Fulvy2xCoEWKkMDo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 07:06:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dy3vnp1zn3"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-O4+9/MKvck2BJW5htNwD51ixV82Fulvy2xCoEWKkMDo="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.88b8608wpa.json",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\data\\users.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KM8ObXTmGdrVPWw+8lyHI3cjAIZIDQXx2AQSTM0JTQU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:36:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "88b8608wpa"
+        },
+        {
+          "Name": "label",
+          "Value": "data/users.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KM8ObXTmGdrVPWw+8lyHI3cjAIZIDQXx2AQSTM0JTQU="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.json",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\MyWebSite\\MyWebSite\\wwwroot\\data\\users.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KM8ObXTmGdrVPWw+8lyHI3cjAIZIDQXx2AQSTM0JTQU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:36:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KM8ObXTmGdrVPWw+8lyHI3cjAIZIDQXx2AQSTM0JTQU="
+        }
+      ]
+    }
+  ]
+}
